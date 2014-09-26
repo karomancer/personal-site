@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "karinachowtime.com Statistics"
+AuthUserFile /var/chroot/home/content/60/10941460/html/stats/.statspwd
+Require valid-user
+DirectoryIndex index.html

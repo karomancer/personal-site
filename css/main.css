@@ -1,0 +1,324 @@
+/*The green you want: #40AE49 */
+/*The gray you want: #8A8C8F */
+/*The black you want: #231F20 */
+
+@font-face
+{
+	font-family: "Myriad Pro";
+	src: url("MyriadPro-Regular.otf");
+}
+
+@font-face
+{
+	font-family: "Myriad Pro Light";
+	src: url("MyriadPro-Light.otf");
+}
+
+
+.karina {
+	color: #40AE49;
+}
+.elizabeth {
+	color: #8A8C8F;
+}
+.chow {
+	color: #231F20;
+}
+
+#menu {
+  font-family: "Myriad Pro",Arial,sans-serif;
+	text-align: right;
+	float:left;
+	width: 20%;
+	position:fixed;
+}
+
+#logo {
+  
+  font-size: 60px;
+  text-align:left;
+  line-height: 82%;
+  margin: 20px 0px 70px 40px;
+}
+
+.social {
+	height:60px;
+	padding-right:5px;
+}
+
+a {
+	color: #40AE49;
+	text-decoration: none;
+}
+
+#projectHeader span a:hover {
+	color: #8A8C8F; 
+	text-decoration: underline;
+}
+
+#carousel a:hover{
+	color: #8A8C8F; 
+	text-decoration: underline;
+}
+
+nav {
+	z-index:1;
+	float:right;
+}
+
+
+nav a {
+	font-size: 30px;
+	font-weight: normal;
+	color: #303030;
+	text-decoration:none;
+	padding: 0px 20px 5px 30px;
+}
+
+nav a:hover {
+	color: #87AD80;
+	/*padding: 5px;*/
+	/*border: 1px solid gray;*/
+}
+
+nav .selected {
+	font-size: 30px;
+	color: #40AE49;
+	text-decoration:none;
+	padding: 0px 20px 5px 30px;
+}
+
+h1 {
+	font-size:40px;
+	color: #231F20 ;
+}
+
+
+h2 {
+	font-size: 36px;
+  font-family: "Myriad Pro Light",Arial,sans-serif;
+}
+
+
+t1 {
+	padding-right: 8px;
+	font-weight: bold;
+	font-size:48px;
+	color: #231F20 ;
+}
+
+#projectHeader {
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+	position:fixed;
+	background-color:white;
+	z-index: 5
+}
+
+.cover {
+	z-index:1;
+	position:relative;
+	display: none;
+}
+.cover span {
+	top:22%;
+}
+
+.sub {
+  font-size:28px;
+  color: #231F20;
+  margin-top:40px;
+  margin-bottom:20px;
+}
+
+.caption {
+  font-size:20px;
+  color: #8A8C8F;
+  margin-bottom:40px;
+}
+
+.parentThumb {
+	/*position:absolute;*/
+	overflow:hidden;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.thumb_link {
+	display:inline-block;
+	float:left;
+}
+
+.thumb {
+	display:inline-block;
+}
+
+.thumb_label {
+	font-family: "Myriad Pro Light", Arial;
+	color: #fff;
+	position:absolute;
+	display:block;
+	margin-left:12px;
+	padding-top:8px;
+}
+
+.thumb_des {
+	text-align:right;
+
+}
+
+#banner {
+	margin:-10px 0px 0px -16px;
+	float:left;
+}
+
+#bkgd {
+	width: 100%;
+	z-index:1;
+}
+
+#bkgdTri {
+	width: 0; 
+	height: 0; 
+	border-left: 0px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 80px solid #fff;
+}
+
+/*Portfolio Project Classes*/
+
+#content {
+  font-family: "Myriad Pro Light",Arial,sans-serif;
+	margin-top:-20px;
+	float: right;
+	text-align: left;
+	width: 75%;
+}
+
+#whitebox {
+	overflow:auto;
+	padding: 0px 8px 0px 20px;
+}
+
+#pheader {
+	width:100%;
+	height:3px;
+	margin-top:6px;
+	float:left;
+}
+
+
+/*Carousel Classes*/
+
+#carousel {
+
+}
+
+#carousel pt {
+ 	font-family: "Myriad Pro Light",Arial,sans-serif;
+	margin-bottom:-8px;
+	font-size:40px;
+	color: #40AE49 ;
+	text-align:right;
+}
+
+#carousel #video {
+	height:75%;
+}
+#carousel img {
+	z-index:1;
+}
+
+block {
+	max-width:48%;
+	float:left;
+	display:inline-block;
+	position:relative;
+}
+
+#breadcrumbs {
+	width:100%;
+	padding:12px 0px 12px 0px;
+	position:relative;
+	display:inline-block;
+}
+
+#breadcrumbs a {
+	z-index:2;
+	position:relative;
+	text-decoration:none;
+	color:#231F20;
+	font-size: 18px;
+  	font-family: "Myriad Pro Light",Arial,sans-serif;
+}
+
+#breadcrumbs a:hover {
+	color:#8A8C8F;
+}
+
+#breadcrumbs #selectBox {
+	background-color:#40AE49;
+	position: absolute;
+	display:block;
+	z-index:1;
+}
+
+.image-tooltip {
+	background-color:#231F20;
+	display:none;
+	position:absolute;
+	text-align:center;
+	z-index:2;
+	opacity:0.9;
+}
+.image-tooltip span {
+	opacity:1;
+	color:#fff;
+	font-family: "Myriad Pro";
+}
+
+/*Portfolio Content Classes*/
+
+#portfolio {
+	margin-top:100px;
+}
+
+#portfolioContent {
+	padding-right:80px;
+}
+
+#aboutMe {
+	padding-right:80px;
+	/*text-align: justify;*/
+}
+
+body {
+	margin-left:0px;
+	padding:0px 0px 0px 0px;
+}
+
+img.topleft {	
+	padding-right:40px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index:-5;
+}
+
+/* Div sizes for portfolio */
+.trio {
+	margin-bottom:8px;
+	max-width:375px;
+	max-height:240px;
+	float:left;
+	box-sizing:border-box;
+}
+
+.off {
+ 	display:none;
+}
+
+#map {
+	overflow:hidden;
+}

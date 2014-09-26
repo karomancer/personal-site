@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Universal Spread of the Internet</title>
+    <link rel="stylesheet" href="../stylesheets/jqueryui.css" type="text/css" />
+    <link rel="stylesheet" href="../stylesheets/style.css" type="text/css" />
+  </head>
+  <body style="overflow:hidden">
+    <div id="info">
+ 			<div id="date"></div>
+      <div id="sliderDIV"> </div>
+		</div>			
+    <div>
+  		<div id="title"><span id="titleSpan" style="font-size:30px;font-weight:bold;color:#363636">UNIVERSAL SPREAD OF THE INTERNET (World Bank data)</span> 
+  				<br />Percentage of citizens with regular access to an internet connection
+      </div>
+    </div>
+		<script type="text/javascript" src="../javascripts/d3.v2.js"></script>
+    <script type="text/javascript" src="../javascripts/jquery.js"></script>
+    <script type="text/javascript" src="../javascripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="../javascripts/heatmap.js"></script>
+
+    <script>
+      var width = document.width
+      var height = document.height
+      if (width < 2000) {
+        $("#date").css("font-size", "100px")
+        $("#title").css("font-size", "12px")
+        $("#titleSpan").css("font-size", "18px")
+      }
+
+      Heatmap.init({ maxValue: 100, jsonFile: 'all_users_internet' });
+    </script>
+  </body>
+</html>

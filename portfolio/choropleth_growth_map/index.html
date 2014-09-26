@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="../../js/bxslider/jquery.bxslider.js"></script>
+		<script src="../../js/portfolio.js"></script>
+		<script src="../../js/jquery.color-2.1.2.min.js"></script>
+		<script src="../../js/lightbox/js/lightbox-2.6.min.js"></script>
+		<title> Karina Chow-time</title>
+		<link rel="stylesheet" type="text/css" href="../../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../../js/bxslider/jquery.bxslider.css" />
+		<link rel="stylesheet" type="text/css" href="../../js/lightbox/css/lightbox.css" />
+	</head>
+
+	<body onload='addMouseOvers()'>
+		<div id="menu">
+			<!-- <div><a href="portfolio.html"><img id="banner" src="banner.png"></img></a></div> -->
+			<div id="logo">
+				<span class="karina">karina</span><br />
+				<span class="elizabeth">elizabeth</span> <br />
+				<span class="chow">chow</span><br />
+			</div>
+			<nav> 	
+				 
+				<a href="../../index.html"> about me </a> <br />
+				<a href="../../portfolio.html"> portfolio </a> <br />
+				<a href="../../resume.pdf" target="_blank"> resume </a> <br /> 
+				<a href="../../contact.html"> contact </a> <br />
+			</nav>
+		</div>
+		
+		<div id="content">
+			<div id="whitebox">
+				<div id="projectHeader">
+					<div>
+						<t1 style="float:left">Choropleth Growth Map</t1>
+						<div style="margin-top:8px;float:left">
+							<span style="margin-left:20px" class="sub">Visualizing (internet) growth in 30 seconds</span> <br />
+							<span style="margin-left:20px">Data Engineering &amp; Web Development, 2012</span>
+						</div>
+					</div>
+					<div id="pheader" style="background-image:url('background.png')"></div>
+				</div>
+
+
+				<div id="carousel" style="overflow:hidden">
+					<div>
+						<block style="padding-right:24px">
+							<a href="hackathon.jpg" data-lightbox="image-0" caption="Yammer Hackathon"><img style="max-width:100%" src="hackathon.jpg"></img></a>
+						</block>
+						<pt>introduction</pt><br />
+						<block>
+							While I was interning at Yammer Inc in 2012, I took part in one of the company's <a href="http://www.businessinsider.com/yammers-culture-microsoft-acquisition-2012-9?op=1" target="_blank">famous hackathons</a>. For this hackathon, I worked on two projects, and as a data engineer intern, it only made sense to have one revolve around displaying data. <br /><br />
+							With a team of data analysts, I created this choropleth growth map for visualizing growing global sales in Yammer Inc in just 24 hours. However, to display to you today, I fed in <a href="http://data.worldbank.org/" target="_blank">World Bank</a> data on internet growth since 1990. <br /> <br />
+							This project is easily adaptable to JSON data sets with country and numerical information. It was written in Javascript using the d3 library.
+						</block>
+					</div>
+					<div>
+						<pt>demo</pt><br />
+						<object id="map" style="margin-left:-8px;padding-bottom:16px;margin-top:-8px;overflow-y:hidden" data="http://karinachowtime.com/portfolio/choropleth_growth_map/code/geo/internet_growth"> Error: Embedded data could not be displayed. </object>
+					</div>
+				</div>						
+			</div>
+		</div>
+
+	</body> 
+	<script>
+		activateCarousel("#aaaaaa")
+		$("#map").ready(function() {
+			var width = $("#carousel").width()
+			$("#map").width(width)
+			$("#map").height($(window).height()*0.7)
+		})
+	</script>
+	
+</html>

@@ -1,0 +1,53 @@
+body, .ui-widget {
+  font: 14px normal 'Trebuchet MS', 'Helvetica Neue', Helvetica;
+}
+
+svg {
+  background: #f8f8f8;
+  overflow-y: hidden;
+}
+
+#countries path {
+  fill: #ccc;
+  stroke: #fff;
+  margin-top:-10px;
+}
+
+#info {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 35px;
+  color: #aaa;
+}
+
+#date {
+	font-weight: bold;
+	font-size: 150px;
+	margin-left: -10px;
+}
+
+#legend {
+  text-align: right;
+}
+
+#title {
+  font-size: 25px;
+  color: #999;
+	position: absolute;
+	bottom: 24%;
+	right: 30px;
+}
+
+#titleSpan {
+  font-size:30px;
+  font-weight:bold;
+  color:#363636;
+}
+
+#slider {
+	margin-left: 20px;
+	margin-right: 20px;
+}

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="../../js/bxslider/jquery.bxslider.js"></script>
+    <script src="../../js/portfolio.js"></script>
+    <script src="../../js/jquery.color-2.1.2.min.js"></script>
+    <script src="../../js/lightbox/js/lightbox-2.6.min.js"></script>
+    <title> Karina Chow-time</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../js/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="../../js/lightbox/css/lightbox.css" />
+
+
+
+    <style type="text/css">
+            .leftcol {
+                float:left;
+                display:inline-block;
+            }
+            .rightcol {
+                width:50%;
+                padding-left:30px;
+                text-align:right;
+                float:right;
+            }
+            .subcell {
+                margin-left:10px;
+            }
+            .subsubcell {
+                margin-left:20px;
+            }
+            .headerCell {
+                border: none;
+            }
+            td {
+                padding:5px 5px 5px 5px;
+                border-right: 1px solid #CCC7C0;
+                border-bottom: 1px solid #CCC7C0;
+
+            }
+            tr {
+                border-bottom: 2px solid #CCC7C0;  
+            }
+            .subheaderRow {
+                background-color:#CCC7C0;
+            }
+            .headerRow {
+                border-bottom: 2px solid gray;   
+                background-color:#A8A49E;
+            }
+            .compicon {
+                width:30px;
+                text-align:center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tableimage {
+                height:40px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .flowmodel {
+              width:690px;
+              height:445px;
+            }
+            .slides {
+                width: 700px;
+                height: 512px;
+            }
+            .reports {
+                width:700px;
+                height:530px;
+            }
+            .pages {
+                width: 700px;
+                height: 750px;
+            }
+            #lowfi {
+
+            }
+            #compAnal {
+              margin-top:125px;
+            }
+
+    </style>
+
+  </head>
+
+  <body style="overflow-y:scroll" onload='addMouseOvers()'>
+    <div id="menu">
+      <div id="logo">
+        <span class="karina">karina</span><br />
+        <span class="elizabeth">elizabeth</span> <br />
+        <span class="chow">chow</span><br />
+      </div>
+      <nav>   
+         
+        <a href="../../index.html"> about me </a> <br />
+        <a href="../../portfolio.html"> portfolio </a> <br />
+        <a href="../../resume.pdf" target="_blank"> resume </a> <br /> 
+        <a href="../../contact.html"> contact </a> <br />
+      </nav>
+    </div>
+    
+    <div id="content">
+      <div id="whitebox">
+        <div id="projectHeader">
+          <div>
+            <t1 style="float:left">Platypus UX</t1>
+            <div style="float:left">
+              <span style="margin-left:20px" class="sub">Making Data Accessible and Understandable for All</span> <br />
+              <span style="margin-left:20px" class="caption" style="font-size:12px"><b>Team Members: </b> <a href="http://aneeshb.com/" target="_blank">Aneesh Bhoopathy</a>, <a href="http://www.contrib.andrew.cmu.edu/~ddoshi/" target="_blank">Dev Doshi</a>, <a href="http://www.alexrothera.com/" target="_blank">Alex Rothera</a>, Soyeon Hwang
+              </span><br />
+              <span style="margin-left:20px">User Research &amp; Interaction Design, 2013</span>
+            </div>
+          </div>
+          <div id="pheader" style="background-image:url('boats1.jpg')"></div>
+        </div>  
+  
+            
+        <script>
+          function expandImage(object) {
+              var jobject = $(object);
+              var height = jobject.css("height");
+              if(height == "300px") {
+                  jobject.animate({
+                      height: '40px',
+                  }, 1000, function() {});
+              } else {
+                  jobject.animate({
+                      height: '300px',
+                  }, 1000, function () {});
+              }
+          }
+
+</script>
+
+<div id="compAnal">
+  <span class="sub">Competitive Analysis on Environmental Monitoring Applications</span><br /><br />
+<table class="compTable" style="width:1330px">
+<tr id="imgrow">
+    <td><b>Sample Screenshot</b><br />(Click to expand)</td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/aC2baQF.png"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/swRsF8c.jpg"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/7vOOmKm.jpg"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/wCP1hTE.png"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/6JAtcXC.png"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/HzQjjtl.png"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://images.freshnessmag.com/wp-content/uploads//2012/10/google-crisis-response-hurricane-sandy-02.jpg"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/4oLu3kl.png"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://i.imgur.com/lUj5mYt.png"></img></td>
+    <td><img onclick="expandImage(this)" class="tableimage" src="http://www.kurzweilai.net/images/earthnowcarbonmonoxide.png"></img></td>
+  </tr> 
+     <tr class="compHeader">
+        <td><b>Name / Link</b></td>
+    <td><a href="http://oe.oregonexplorer.info/pnwwqxReport/">Oregon Explorer</a></td>
+    <td><a href="http://www.planetaryskin.org/">Planetary Skin Institute</a></td>
+    <td><a href="http://www.seasketch.org/">Sea Sketch</a></td>
+    <td><a href="http://www2.nccos.noaa.gov/coast/">NOAA Harmful Algal Bloom</a></td>
+    <td><a href="http://www.enviroinsite.com/ei0_features.html">EnvironInsite</a></td>
+    <td><a href="http://climate.com/climate-apps">The Climate Coporation</a></td>
+    <td><a href="www.google.org/crisisresponse/">Google Crisis Response</a></td>
+    <td><a href="http://www.greensense.com.au/wp-content/uploads/2012/06/Greensense-View-saving-water.jpg">Greensense</a></td>
+    <td><a href="http://maps.waterdata.usgs.gov/mapper/index.html">National Water Information System : Mapper</a></td>
+    <td><a href="https://itunes.apple.com/us/app/earth-now/id494633346?mt=8">NASA's Earth Now</a></td>
+  </tr>
+  <tbody class="compBody">
+    <tr>
+  <td><b>Medium/Device</b></td>
+  <td><span style="text-align:center">Web</td>
+    <td><span style="text-align:center">Web</td>
+    <td><span style="text-align:center">Web</td>
+    <td><span style="text-align:center">Web</td>
+    <td><span style="text-align:center">Web</td>
+  <td><span style="text-align:center">Mobile & Web</td>
+    <td><span style="text-align:center">Web</td>
+  <td><span style="text-align:center">Web</td>
+    <td><span style="text-align:center">Web</td>
+  <td><span style="text-align:center">Mobile</td>
+  </tr>
+  <tr class="headerRow">
+    <td class="headerCell"><b>Monitoring content</b></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+  </tr>
+  <tr>
+    <td><span class="subcell">Water Temperature</td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subcell">Precipitation</td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subcell">Water Flow</td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subcell">Water solubles</td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subcell">Habitat & Migration</td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subcell">Etc.</td>
+    <td><span>Air temperature</span></td>
+    <td><span>Disturbanances, warning prediction</span></td>
+    <td><span>Human use data, Oil platform</span></td>
+    <td></td>
+    <td></td>
+    <td><span>Weather focused</span></td>
+    <td><span>Weather event oriented</span></td>
+    <td><span>Personal artificial environment management</span></td>
+    <td><span>Surface waterground water, spring site</span></td>
+    <td><span>Sea level, ozone</span></td>
+  </tr>
+    <tr class="headerRow">
+    <td class="headerCell"><b>Features</b></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+    <td class="headerCell"></td>
+  </tr>
+  <tr class="subheaderRow">
+    <td><span class="subcell">User-platform interaction</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Personalized account</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">News</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Forum</span></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Comment/Opinion</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">User Labeling</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Refresh</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+    <tr class="subheaderRow">
+    <td><span class="subcell">Map related interaction</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Map</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">User's choice of map</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+        <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+        <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">3D</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Navigation</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Zoom in/out</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Search</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Full screen</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+    <tr class="subheaderRow">
+    <td><span class="subcell">Data/contents view</td>
+        <td></td>
+      <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Layer(checkbox) view</span></td>
+          <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+        
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Drop-down view</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Color distinction</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Supplementary Image</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Supplementary Graph</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+    <tr class="subheaderRow">
+    <td><span class="subcell">History view</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Timeline (slidebar)</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Video clip</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+    <tr class="subheaderRow">
+    <td><span class="subcell">Deliverable</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Save</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">(Diverse format)</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Print</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Bookmark/Watch</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+  </tr>
+    <tr class="subheaderRow">
+    <td><span class="subcell">User Assistance</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span class="subsubcell">Help</span></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/jO6TBWG.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td><img class="compicon" src="http://i.imgur.com/C9J7cCn.png"></img></td>
+    <td></td>
+  </tr> 
+    </tbody>
+</table>
+</div>
+
+  </body> 
+  
+</html>

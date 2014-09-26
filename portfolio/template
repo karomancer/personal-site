@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="../js/portfolio.js"></script>
+		<title> Karina Chow-time</title>
+    		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<div id="menu">
+			<!-- <div><a href="portfolio.html"><img id="banner" src="banner.png"></img></a></div> -->
+			<div id="logo">
+				<span class="karina">karina</span><br />
+				<span class="elizabeth">elizabeth</span> <br />
+				<span class="chow">chow</span><br />
+			</div>
+			<nav> 	
+				<a href="../portfolio.html"> home </a> <br />
+				<a href="../index.html"> about me </a> <br />
+				<span class="selected"> portfolio </span> <br />
+				<a href="../resume.pdf" target="_blank"> resume </a> <br /> 
+				<a href="../contact.html"> contact </a> <br />
+			</nav>
+		</div>
+		
+		<div id="content">
+			<div id="header">
+				<h1></h1>
+			</div>
+						
+
+		</div>
+
+	</body> 
+
+	<script>
+
+	</script>
+	
+</html>

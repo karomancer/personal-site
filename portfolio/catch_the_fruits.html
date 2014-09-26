@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="../../js/portfolio.js"></script>
+		<title>Catch the Fruits - Karina Chow</title>
+    		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	</head>
+
+	<body>
+		<div id="menu">
+			<!-- <div><a href="portfolio.html"><img id="banner" src="banner.png"></img></a></div> -->
+			<div id="logo">
+				<span class="karina">karina</span><br />
+				<span class="elizabeth">elizabeth</span> <br />
+				<span class="chow">chow</span><br />
+			</div>
+			<nav> 	
+				<a href="../portfolio.html"> home </a> <br />
+				<a href="../index.html"> about me </a> <br />
+				<span class="selected"> portfolio </span> <br />
+				<a href="../resume.pdf" target="_blank"> resume </a> <br /> 
+				<a href="../contact.html"> contact </a> <br />
+			</nav>
+		</div>
+		
+		<div id="content">
+			<div id="header"><h1>Catch the Fruits <span style="font-weight:normal">(in progress)</span></h1></div>
+				<div id="portfolioContent">
+				A very good friend of mine from high school, Lincoln Race, studies computer science and astrophysics at University of California San Diego. He also is very interested in mobile game development, and asked for my assistance in producing the graphics for his game <a href="https://play.google.com/store/apps/details?id=com.ctf#?t=W251bGwsMSwxLDIxMiwiY29tLmN0ZiJd">Catch the Fruit</a>.
+				<br /> <br />
+				<div style="background-color:#F0F0F0;padding:12px;margin-top:-2px">
+					<img style="width:100px;float:left;padding-right:10px;margin-top:-10px" src="mango.png"></img>
+					Catch the Fruits is an Android game, available for free, on the Google Play Store. The official desciprtion goes as follows: "In Catch the Fruits, you'll be able to use a touch controlled basket to catch, well, fruits. with 7 currently planned regions and over 50 fruits, there's plenty of content to unlock, all completely free if you're good enough or if you share this app with your Facebook friends via the game." 
+				</div> <br />
+				The game includes a variety of graphics, including backgrounds and fruits. There are a variety of levels and dozens of fruits. I ended up illustrating many fruit that I never even knew existed! Here's a sample of the illustrations I made for the game: <br />
+				<div id="fruit" style="padding-bottom:120px"></div>
+			</div>
+		</div>
+	</body> 
+
+	<script>
+		$("#fruit").ready(function() {
+			populateCTF()
+		})
+	</script>
+	
+</html>

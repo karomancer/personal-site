@@ -1,0 +1,325 @@
+@font-face
+{
+  font-family: "Myriad Pro";
+  src: url("MyriadPro-Regular.otf");
+}
+
+@font-face
+{
+  font-family: "Myriad Pro Light";
+  src: url("MyriadPro-Light.otf");
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body, div {
+  font-family: "Myriad Pro", Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Myriad Pro Light", Arial, sans-serif;
+  font-weight: lighter;
+  color: white;
+  margin: 4px 0px 0px 0px;
+}
+
+li, span {
+  font-family: "Myriad Pro Light", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+ul {
+  margin-top: 4px;
+  padding-left: 20px;
+  list-style: circle;
+}
+
+a {
+  color: #1f1f1f;
+}
+
+.topcard h1 {
+  color: #1f1f1f;
+}
+
+.topcard h2 {
+  color: #1f1f1f;
+}
+
+.topcard h3 {
+  color: #1f1f1f; 
+}
+
+/*a:visited {
+  color: #cfcfcf;
+}*/
+
+h1.title {
+  font-size: 125px;
+  font-weight: normal;
+}
+
+.centered-textcell {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.bold {
+  font-family: "Myriad Pro", Arial, sans-serif;
+  font-weight: bolder;
+  color: #5f5f5f;
+  text-align: right;
+  padding: 80px 18px;
+  margin-top: -10px;
+}
+
+/* GENERAL CLASSES */
+.cover {
+  background-size: cover;
+  background-image: url('../background.svg');
+  background-color: #fcfcfc;
+  width: 100%;
+  position: relative;
+}
+
+.cover.gray {
+  background-color: #e1e1e1;
+}
+
+.cover.green {
+  background-color: #7CD180;
+}
+
+.cover .content {
+  padding: 40px;
+}
+
+.cover .title-card {
+  /*background-color: #fcfcfc;*/
+  padding: 32px;
+  /*width: 100%;*/
+}
+
+.cover .title-card h1 {
+  font-size: 42px;
+  color: white;
+}
+
+.cover .title-card a {
+  color: #E7FF88;
+  text-decoration: none;
+}
+
+.cover .title-card a:hover {
+  color: #A8EF62;
+}
+
+.cover .info-box {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px;
+  margin: 12px 16px;
+  /*border-bottom: 1px solid #a5a5a5;*/
+  border: 2px solid #A8EF62;
+  border-radius: 10px;
+  display: inline-block;
+  /*background-color: #fcfcfc;*/
+  vertical-align: top;
+}
+
+.cover .info-box:not(:first-child) {
+  margin-top: 4px;
+}
+
+.blur {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+}
+
+.topcard {
+  padding: 30px 0px;
+}
+
+.gray {
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box; 
+}
+
+.col.right-column {
+  margin-left: 11px;
+}
+
+.col.right-column.portfolio {
+  border-left: 5px solid #5f5f5f;
+  padding-top: 5px;
+  padding-left: 12px;
+}
+
+/* LANDING */
+/*#landing {
+  background-color: #fcfcfc;
+  color: white;
+}*/
+
+
+#landing {
+  background-image: url('../full_bleed_face_wbkgd-02.svg'); 
+  background-position: left center;
+  opacity: 0.6;
+}
+
+#landing_card {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fcfcfc;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  border-top: 2px solid #A8EF62;
+  border-bottom: 2px solid #A8EF62;
+  color: #1f1f1f;
+}
+
+.down-arrow {
+  position: absolute;
+  right: 8px;
+  bottom: 0;
+  width: 80px;
+  height: 70px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #fcfcfc;
+}
+
+/* PORTFOLIO BULLSHIT */
+
+
+.portfolio {
+  padding: 12px 0px;
+}
+
+
+.portfolio
+.project-stripe {
+  /*background-color: #fcfcfc;*/
+  padding: 22px 14px;
+  margin: 12px -24px;
+}
+
+.portfolio 
+.project-stripe 
+.sub-portfolio {
+  border: 1px solid #f5f5f5;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  padding: 18px 12px 60px 8px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.portfolio 
+.project-stripe 
+.sub-portfolio .label {
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  margin-bottom: 0;
+  right: 8px;
+  font-size: 20px;
+}
+
+.portfolio
+.project-stripe
+div .item {
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  vertical-align: top;
+  overflow: hidden;
+  display: inline-block;
+  /*border-radius: 10px;*/
+}
+
+.portfolio .item:not(:first-child) {
+  margin-left: 12px;
+}
+
+.portfolio 
+.item
+.thumb {
+  background-color: white;
+
+  vertical-align: middle;
+  position: relative;
+}
+
+.portfolio 
+.item
+.thumb-label {
+  font-family: "Myriad Pro Light", Arial;
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.portfolio 
+.item
+.thumb-cover {
+  position: relative;
+  display: none;
+}
+
+.portfolio 
+.item
+.thumb-name {
+  font-size: 30px;
+}
+
+.portfolio 
+.item
+.thumb-type {
+  text-align:right;
+  font-size: 16px;
+}
+
+.portfolio 
+.item
+.thumb-language {
+  color: #5f5f5f !important;
+
+}
+
+.portfolio 
+.item
+.thumb-year {
+  display: none;
+  position: absolute;
+  bottom: 4px;
+  right: 12px;
+  font-size: 20px;
+}
+
+
+/* TWITTER OVERRIDES */
+#twitter-widget-0 {
+
+}
+
+.stream .h-feed li {
+
+}
+
+#twitter-widget-0 .timeline-header {
+  display: none !important;
+}
+
+

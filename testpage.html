@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/portfolio2.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
     <title> Karina Chow-time</title>
     <link rel="stylesheet" type="text/css" href="css/test.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
   </head>
 
   <body>
@@ -20,6 +22,32 @@
     <!-- ABOUT ME -->
     <div id="who" class="cover">
       <div class="content">
+        <h1 class="cursive">Hello world! You found me!</h1> Wait, who did you find exactly? <br />
+        My name is Karina and I'm a software engineer living in San Francisco, CA. I currently work as a software, mostly front-end web, engineer on the Microsoft Office Analytics team. I spend most of my time designing and coding up an analytics platform to help make Microsoft more data driven. 
+        <br /><br />
+        I have a passion for beautiful things, whether it'd be beautiful code, user experiences, graphic design, or data visualizations. Thus, my mind usually tends to focus mainly on anything that is user-facing. I take pride in being a mix of many things.
+        <br /><br />
+        <h3>So, what am I?</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="what-am-i-card">
+              <h2 class="cursive">I'm an adventurer.</h2> 
+              As a recent graduate, my primary purpose is to experience as many things as I can to find my true niche in the world. Culture is very important to me, and therefore, so is traveling and seeing the world. I believe it is impossible to truly empathize with those cut from cloths other than our own, but I believe that to be a truly global community we must go out and learn as much as we can from each other. 
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="what-am-i-card">
+              <h2 class="cursive">I'm a learner.</h2>
+              Curiosity may have killed the cat, but at least it was brave to reach beyond comfort and mediocrity. Similar to adventuring, I think it's important to experience new things. Familiar situations make me uncomfortable and anxious, to the point at which I feel I am wasting my time not continuing to learn. So, I'll almost always be willing to try a new game, hobby, or food. Just ask me!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="what-am-i-card">
+              <h2 class="cursive">I'm a creative.</h2> 
+              A wonderful professor of mine at Carnegie Mellon (Dan Licata) once concluded one of his lectures with a single slide stating  "Code is art", which is exactly how I have since treated my software engineering/front-end development career. Any creative career requires intuition and unique problem solving abilities, and I'd like to think I have a creative's intuition.  
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -163,21 +191,6 @@
     $('#landing_card').css('top', height*0.25);
     populatePortfolio($('#class_projects'));  
     populatePortfolio($('#other_projects'));  
-
-    //Twitter embedded shit
-    $.ajax({
-      method: "GET",
-      url: "https://api.twitter.com/1.1/users/show.json?screen_name=karomancer",
-      beforeSend: function (request) {
-        request.setRequestHeader("Access-Control-Allow-Origin", "http://www.twitter.com");
-      },
-      success: function(data) {
-        debugger
-      },
-      error: function(error) {
-        debugger
-      }
-    })
   </script>
   
 </html>

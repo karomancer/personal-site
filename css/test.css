@@ -41,6 +41,20 @@ a {
   color: #1f1f1f;
 }
 
+.green {
+  color: #8A8C8F;
+}
+
+.cursive {
+  font-family: "BabyDoll";
+}
+
+.what-am-i-card {
+  background-color: #fcfcfc;
+  padding: 12px 16px;
+  border-radius: 10px;
+}
+
 .topcard h1 {
   color: #1f1f1f;
 }

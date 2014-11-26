@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <head>
+    <title>Countdown to Mergany Liftoff</title>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <style>
+      #countdown {
+        padding-top: 24px;
+        text-align: center;
+        color: white;
+        font-family: Helvetica, Arial;
+      }
+      .timeBlock {
+        display: inline-block;
+      }
+      .timeBlock h2 {
+        font-weight: lighter;
+        margin-bottom: -10px;
+        padding-bottom: 0;
+      }
+      .timeUnit {
+        font-size: 600%;
+        padding: 12px;
+        display: inline-block;
+      }
+      .colon {
+        font-size: 650%;
+        font-weight: lighter;
+        font-family: Times;
+        vertical-align: top;
+      }
+      .black {
+        background-color: #1f1f1f;
+      }
+      .red {
+        background-color: #F04141;
+      }
+      .yellow {
+        background-color: #F0F041;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stripe black"></div>
+    <div class="stripe red">
+      <div id="countdown">
+        <div class="timeBlock">
+          <h2>DAYS</h2>
+          <span class="timeUnit" id="days"></span>
+          <span class="colon">:</span>
+        </div>
+        <div class="timeBlock">
+          <h2>HOURS</h2>
+          <span class="timeUnit" id="hours"></span>
+          <span class="colon">:</span>
+        </div>
+        <div class="timeBlock">
+          <h2>MINUTES</h2>
+          <span class="timeUnit" id="minutes"></span>
+          <span class="colon">:</span>
+        </div>
+        <div class="timeBlock">
+          <h2>SECONDS</h2>
+          <span class="timeUnit" id="seconds"></span>
+          <span class="colon">:</span>
+        </div>
+        <div class="timeBlock">
+          <h2>MILLISECONDS</h2>
+          <span class="timeUnit" id="milliseconds"></span> 
+        </div>
+      </div>
+    </div>
+    <div class="stripe yellow"></div>
+  </body>
+  <script>
+    var departure = new Date(2014, 11, 10, 20, 50); // 12/10/2014 at 20:50p
+
+    setInterval(function() {
+      var now = new Date();
+      var msDiff = departure.valueOf() - now.valueOf();
+      var dayDiff = msDiff/(1000 * 60 * 60 * 24);
+      var hourDiff = (dayDiff - parseInt(dayDiff)) * 24;
+      var minuteDiff = (hourDiff - parseInt(hourDiff)) * 60;
+      var secondDiff = (minuteDiff - parseInt(minuteDiff)) * 60;
+      var milDiff = (secondDiff - parseInt(secondDiff)) * 1000;
+
+      if (milDiff <= 0) {
+        $('body').html('<h1>HOLY CRAP WE\'RE IN GERMANY YAY</h1>')
+      }
+      else {
+        $('#days').html(pad(parseInt(dayDiff)));
+        $('#hours').html(pad(parseInt(hourDiff)));
+        $('#minutes').html(pad(parseInt(minuteDiff)));
+        $('#seconds').html(pad(parseInt(secondDiff)));
+        $('#milliseconds').html(pad(parseInt(milDiff), 100));  
+      }
+    }, 1);
+
+    var stripeSizing = function() {
+      $('.stripe').height($(window).height()/3);
+      $('.stripe').width($(window).width());
+    }
+
+    stripeSizing();
+
+    $(window).resize(function() {
+      stripeSizing();
+    })
+
+    var pad = function(i, num){
+      if ((!num && i<10) || (i < num))
+        return '0' + i;
+      return i;
+    }
+  </script>
+</html>

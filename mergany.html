@@ -95,6 +95,7 @@
   </body>
   <script>
     var departure = new Date(2014, 11, 10, 20, 50); // 12/10/2014 at 20:50p
+    var y = $(window).height()/2 - 40;
 
     setInterval(function() {
       var now = new Date();
@@ -107,7 +108,16 @@
 
       if (milDiff <= 0) {
         if (now.getDate() < 22 && now.getMonth() == 11) {
-          $('body').html('<h1>HOLY CRAP WE\'RE IN GERMANY YAY</h1>')
+          $('body').empty();
+          $('body').css('background-size', 'cover');
+          if (now.getDate() <= 11 && now.getHours() < 21) {
+            $('body').css('background-image', 'url("lederhosen-dancing.gif")');
+            $('body').append('<div class="yellow" style="text-align:center;margin-top:'+y+'px"><h1>TAYME TO DANCE IN LEDERHOSEN!</h1></div>');
+          } 
+          else {
+            $('body').css('background-image', 'url("http://blog.holachina.net/wp-content/uploads/2009/02/meat-wagon1.jpg")');
+            $('body').append('<div class="red" style="text-align:center;margin-top:'+y+'px"><h1 style="font-size: 120px;padding-bottom:0px">WOO WE\'RE IN GERMANY!</h1><h1 style="color:white;margin-top:-88px;padding-top: 0px">Don\'t forget to call England for the MIETWAGEN!</h1></div>');
+          }
         }
         else {
           $('body').html('<h1>GERMANY IS OVER? :(</h1>')
@@ -131,7 +141,7 @@
 
     $(window).resize(function() {
       stripeSizing();
-    })
+    });
 
     var pad = function(i, num){
       if ((!num && i<10) || (i < num))
